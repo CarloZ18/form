@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
 import { SignUpForm } from "./Components/Form";
-import { validate } from "./utils/validation";
+import  validation  from "./utils/validation";
 
 function App() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -41,7 +41,9 @@ function App() {
             cardDate: currentDate,
             terms: false,
           }}
-          validate={validate}
+
+          validate={validation}
+
           onSubmit={(values, { resetForm }) => {
             resetForm();
             setFormComplete(true);
