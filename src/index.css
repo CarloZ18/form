@@ -229,7 +229,8 @@ input {
 }
 
 .error {
-  color: #f0a500;
+  color: red;
+  
 }
 
 @media only screen and (max-width: 540px) {
